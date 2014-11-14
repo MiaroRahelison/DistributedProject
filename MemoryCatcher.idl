@@ -6,9 +6,11 @@ module MemoryCatcherApp
 	oneway void buy(in long amount);
 	//THIS IS GETTING RESOURCES
 	long getResource();
+	//THIS IS GETTING MEMORIES
 	string getMemory();
+	//THIS IS SHARING A MEMORY
+	oneway void share(in string share, in string moments);
 	
-	oneway void share(in string share);
 	string getUser();
 	oneway void transfer(in string points);
 	long login(in string username, in string password);

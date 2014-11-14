@@ -2,11 +2,38 @@
 import MemoryCatcherApp.*;
 
 //Servant must inherit the generated code
-class MemoryCatcherServant extends _MemoryCatcherImplBase {
+public class MemoryCatcherServant extends _MemoryCatcherImplBase {
 	// Add the MemoryCatchers methods here in the next step.
 
-	public String sayHello() {
-	// Add the method implementation here in the next step.
-	return "\nHello My Application!!\n";
+	int resources = 0;
+	int points = 0;
+	String memories = " ";
+	String moments = " ";
+
+	public void buy(int amount){
+			resources = resources + amount;
+
 	}
+
+
+	public int getResource(){
+		return resources;
+	}
+
+	public String getMemory(){
+		return memories;
+	}
+
+	public String share(String memories){
+			moments = memories + moments;
+	}
+
 }
+
+
+
+
+
+
+
+
