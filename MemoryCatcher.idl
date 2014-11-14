@@ -1,0 +1,19 @@
+module MemoryCatcherApp
+{
+	interface MemoryCatcher
+	{
+	//THIS IS BUYING RESOURCES
+	oneway void buy(in long amount);
+	//THIS IS GETTING RESOURCES
+	long getResource();
+	string getMemory();
+	
+	oneway void share(in string share);
+	string getUser();
+	oneway void transfer(in string points);
+	long login(in string username, in string password);
+	long register(in string username, in string password, in string email);
+	
+
+	};
+};
