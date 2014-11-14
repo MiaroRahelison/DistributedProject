@@ -7,6 +7,6 @@ class MemoryCatcherServant extends _MemoryCatcherImplBase {
 
 	public String sayHello() {
 	// Add the method implementation here in the next step.
-	return "\nHello World!!\n";
+	return "\nHello My Application!!\n";
 	}
 }
